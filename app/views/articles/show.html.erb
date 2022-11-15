@@ -1,0 +1,8 @@
+<h1><%= link_to "Wikinimous", articles_path(@articles) %> </h1>
+
+<h1> <%= @article.title  %></h1>
+<p><%= @article.content %></p>
+
+<%= link_to "Edit my article", edit_article_path(@article) %>
+
+<%= link_to "Delete this article", article_path(@article), data: { turbo_method: 'delete', turbo_confirm: 'Are you sure?' }  %>

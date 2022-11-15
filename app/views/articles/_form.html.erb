@@ -1,0 +1,11 @@
+<h1>Wikinimous</h1>
+
+<ul>
+<%= form_with model: @article do |a| %>
+  <li><%= a.label :title %>
+  <%= a.text_field :title %></li>
+  <li><%= a.label :content %>
+  <%= a.text_field :content %></li>
+  <%= a.submit %>
+<% end %>
+</ul>
